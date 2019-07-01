@@ -6,7 +6,7 @@ RSpec.describe 'a test request' do
     private_key ENV['API_KEY']
   end
 
-  it 'sends a request' do
+  it 'sends a request', card: "TEST-123" do
     post '/v2/accounts', params: { account: { account_code: 'abcdefg' } }
 
     expect(response.code).to eq(201)

@@ -1,5 +1,5 @@
 require 'pry'
-require 'helpers/request_helper'
+require_relative 'helpers/request_helper'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
