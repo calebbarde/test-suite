@@ -1,4 +1,4 @@
-aequire 'rake'
+require 'rake'
 require 'rspec/core/rake_task'
 
 desc "Run tests, recording their output"
